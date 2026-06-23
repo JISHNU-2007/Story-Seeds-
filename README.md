@@ -1,16 +1,61 @@
-# React + Vite
+# Story Seeds
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Title
 
-Currently, two official plugins are available:
+**Story Seeds**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pitch
 
-## React Compiler
+Story Seeds generates short, tension-rich story prompts from communities, places, or situations, helping writers overcome blank-page syndrome and start writing instantly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## User
 
-## Expanding the Oxlint configuration
+* Aspiring Writers
+* Students
+* Content Creators
+* RPG Enthusiasts
+* Authors seeking creative inspiration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Data Model
+
+### StorySeed
+
+| Field           | Type      | Description                 |
+| --------------- | --------- | --------------------------- |
+| seedId          | String    | Unique identifier           |
+| title           | String    | Seed title                  |
+| setting         | String    | Story location/environment  |
+| community       | String    | Community or group involved |
+| conflict        | String    | Central dramatic tension    |
+| genre           | String    | Story genre                 |
+| mood            | String    | Emotional tone              |
+| generatedPrompt | Text      | AI-generated story seed     |
+| createdAt       | Timestamp | Creation date and time      |
+
+## AI Feature
+
+### Input
+
+* Genre
+* Setting
+* Community Context
+* Narrative Constraints
+* Emotional Tone
+* Conflict Parameters
+
+### Processing
+
+Large Language Model (LLM) performs contextual narrative synthesis, conflict generation, and story-hook optimization using prompt-engineering and creative text generation techniques.
+
+### Output
+
+A concise, one-paragraph story seed containing:
+
+* Dramatic tension
+* Character motivation
+* Narrative hook
+* Clear story direction
+
+## Example
+
+> A quiet fishing village celebrates its annual festival when a stranger arrives claiming the town's founder stole a powerful artifact centuries ago. As old rivalries resurface and the tides begin behaving strangely, one young resident must decide whether to protect the village's secrets or uncover the truth.
